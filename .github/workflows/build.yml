@@ -17,9 +17,9 @@ jobs:
       - name: Install ARM GCC
         uses: carlosperate/arm-none-eabi-gcc-action@v1
         with:
-          version: '10.3-2021.10'  # lub inna zgodna z Twoim projektem
+          version: '10.3-2021.10'  # dopasuj do wersji używanej lokalnie
 
       - name: Build project
         run: |
-          cd tft_SPI2_v9_wd
           make
+
