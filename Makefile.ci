@@ -5,7 +5,9 @@ LD = arm-none-eabi-gcc
 AS = arm-none-eabi-as
 
 CFLAGS = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard \
-         -Wall -ffunction-sections -fdata-sections -std=gnu11 -O2
+         -Wall -ffunction-sections -fdata-sections -std=gnu11 -O2 \
+         -DSTM32F446xx
+
 
 LDFLAGS = -TSTM32F446RETX_FLASH.ld -Wl,-Map=output.map -Wl,--gc-sections \
           -lc -lm -lnosys
