@@ -17,9 +17,8 @@ jobs:
       - name: Install ARM GCC
         uses: carlosperate/arm-none-eabi-gcc-action@v1
         with:
-          version: '10.3-2021.10'  # dopasuj do wersji używanej lokalnie
+          version: '10.3-2021.10'
 
       - name: Build project
         run: |
-          make
-
+          make -f Makefile.ci
