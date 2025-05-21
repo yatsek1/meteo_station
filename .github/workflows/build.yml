@@ -21,5 +21,5 @@ jobs:
 
       - name: Build project
         run: |
-          cd tft_SPI2_v9_wd/Debug
+          cd tft_SPI2_v9_wd
           make
