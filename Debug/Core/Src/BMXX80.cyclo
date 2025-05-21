@@ -1,0 +1,14 @@
+../Core/Src/BMXX80.c:87:9:BME280_Read8	1
+../Core/Src/BMXX80.c:145:10:BME280_Read16	1
+../Core/Src/BMXX80.c:163:10:BME280_Read16LE	1
+../Core/Src/BMXX80.c:214:6:BME280_Write8	1
+../Core/Src/BMXX80.c:230:10:BME280_Read24	1
+../Core/Src/BMXX80.c:380:9:BME280_IsReadingCalibration	1
+../Core/Src/BMXX80.c:387:6:BME280_SetConfig	1
+../Core/Src/BMXX80.c:393:6:BME280_Init	11
+../Core/Src/BMXX80.c:534:7:BME280_ReadTemperature	5
+../Core/Src/BMXX80.c:656:9:BME280_ReadPressure	3
+../Core/Src/BMXX80.c:686:7:BME280_ReadHuminidity	2
+../Core/Src/BMXX80.c:777:9:BME280_ReadTemperatureAndPressureAndHuminidity	5
+../Core/Src/BMXX80.c:835:7:BME280_ReadAltitude	1
+../Core/Src/BMXX80.c:847:10:BME280_GetSeaLevelPressure	1

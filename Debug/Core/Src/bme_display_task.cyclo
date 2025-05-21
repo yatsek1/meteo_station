@@ -1,0 +1,8 @@
+../Core/Src/bme_display_task.cpp:66:6:void SaveColorIdx(uint8_t)	2
+../Core/Src/bme_display_task.cpp:85:9:uint8_t ReadColorIdx()	2
+../Core/Src/bme_display_task.cpp:93:6:void lcd_init(const uint8_t*)	1
+../Core/Src/bme_display_task.cpp:106:6:void updateDisplayIfNeeded(bool)	11
+../Core/Src/bme_display_task.cpp:137:6:void show_weather_data()	11
+../Core/Src/bme_display_task.cpp:207:6:void BME_Display_Task(void*)	1
+../Core/Src/bme_display_task.cpp:211:1:void __static_initialization_and_destruction_0()	1
+../Core/Src/bme_display_task.cpp:211:1:cpp)	1

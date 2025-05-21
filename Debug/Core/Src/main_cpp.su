@@ -1,0 +1,11 @@
+../Core/Src/main_cpp.cpp:51:6:void HAL_GPIO_EXTI_Callback(uint16_t)	16	static
+../Core/Src/main_cpp.cpp:61:17:void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef*)	24	static,ignoring_inline_asm
+../Core/Src/main_cpp.cpp:71:17:void vApplicationStackOverflowHook(TaskHandle_t, char*)	16	static
+../Core/Src/main_cpp.cpp:77:17:void vApplicationMallocFailedHook()	8	static
+../Core/Src/main_cpp.cpp:84:17:void vApplicationIdleHook()	4	static
+../Core/Src/main_cpp.cpp:112:9:main_cpp()::<lambda(void*)>	16	static
+../Core/Src/main_cpp.cpp:112:9:static void main_cpp()::<lambda(void*)>::_FUN(void*)	16	static
+../Core/Src/main_cpp.cpp:112:9:main_cpp()::<lambda(void*)>::operator void (*)(void*)() const	16	static
+../Core/Src/main_cpp.cpp:90:5:int main_cpp()	32	static
+../Core/Src/main_cpp.cpp:152:1:void __static_initialization_and_destruction_0()	8	static
+../Core/Src/main_cpp.cpp:152:1:cpp)	8	static

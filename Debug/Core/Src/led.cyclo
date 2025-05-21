@@ -1,0 +1,7 @@
+../Core/Src/led.cpp:12:1:Led::Led(GPIO_TypeDef*, uint16_t, uint16_t)	1
+../Core/Src/led.cpp:24:6:static void Led::blink_task_entry(void*)	1
+../Core/Src/led.cpp:30:6:void Led::blink_task()	3
+../Core/Src/led.cpp:55:6:void Led::set_freq(uint16_t)	1
+../Core/Src/led.cpp:61:10:uint16_t Led::get_freq()	1
+../Core/Src/led.cpp:69:6:void Led::start()	1
+../Core/Src/led.cpp:75:6:void Led::stop()	1

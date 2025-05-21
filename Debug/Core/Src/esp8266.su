@@ -1,0 +1,10 @@
+../Core/Src/esp8266.cpp:17:1:ESP8266::ESP8266(UART_HandleTypeDef*, UART_HandleTypeDef*)	24	static
+../Core/Src/esp8266.cpp:20:6:void ESP8266::setDebug(bool)	16	static
+../Core/Src/esp8266.cpp:24:6:void ESP8266::debugPrint(const char*)	24	static
+../Core/Src/esp8266.cpp:30:6:bool ESP8266::isBusy() const	16	static
+../Core/Src/esp8266.cpp:31:6:void ESP8266::setBusy(bool)	16	static
+../Core/Src/esp8266.cpp:33:6:bool ESP8266::sendCommand(char*, char*, size_t, uint32_t)	48	static
+../Core/Src/esp8266.cpp:77:6:bool ESP8266::connectToWiFi(const char*, const char*, char*, size_t)	160	static
+../Core/Src/esp8266.cpp:101:6:bool ESP8266::isConnected(const char*)	280	static
+../Core/Src/esp8266.cpp:110:6:bool ESP8266::sendToThingSpeak(const char*, float, float, int32_t)	1176	static
+../Core/Src/esp8266.cpp:203:6:bool ESP8266::sendRawTcp(const char*, uint16_t, const char*, size_t)	696	static
