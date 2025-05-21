@@ -1,25 +1,36 @@
-# STM32CubeIDE
-*.launch
-*.bin
+# Ignoruj wszystko w Debug/
+Debug/*
+
+# Ale zachowaj tylko te pliki potrzebne do budowania projektu w GitHub Actions:
+!Debug/Makefile
+!Debug/objects.list
+!Debug/objects.mk
+!Debug/sources.mk
+
+# Oraz wszystkie wymagane subdir.mk z Debug/ (recurse, jeśli potrzeba):
+!Debug/**/subdir.mk
+
+# Ignoruj pliki binarne i artefakty
 *.elf
+*.bin
 *.hex
 *.map
 *.o
 *.d
-*.lst
-*.srec
+*.su
+*.cyclo
+*.list
 
-# Build directories
-/Debug/
-/Release/
-
-# Eclipse metadata
-.settings/
-.project
+# Eclipse i STM32CubeIDE
 .cproject
+.project
+.launch
+.settings/
+*.ioc
 
-# OS files
+# OS
 .DS_Store
 Thumbs.db
 
+# Klucze prywatne i inne pliki prywatne
 diag_serv_key.pem
