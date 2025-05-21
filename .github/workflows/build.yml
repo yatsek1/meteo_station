@@ -1,0 +1,25 @@
+name: Build STM32 project
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install ARM GCC
+        uses: carlosperate/arm-none-eabi-gcc-action@v1
+        with:
+          version: '10.3-2021.10'  # lub inna zgodna z Twoim projektem
+
+      - name: Build project
+        run: |
+          cd tft_SPI2_v9_wd/Debug
+          make
