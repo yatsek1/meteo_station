@@ -4,9 +4,10 @@
  *  Created on: Apr 30, 2025
  *      Author: sapal
  */
-
+extern "C"{
 #include "FreeRTOS.h"
 #include "task.h"
+}
 #include "usart.h"
 #include <string.h>
 #include <stdio.h>

@@ -1,0 +1,812 @@
+Checking Core\Src\BMXX80.c ...
+Core\Inc\main.h:30:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Src\BMXX80.c:13:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Src\BMXX80.c:16:0: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdint.h>
+^
+Core\Src\BMXX80.c:18:0: information: Include file: "math.h" not found. [missingInclude]
+#include "math.h"
+^
+Core\Src\BMXX80.c:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+Core\Src\BMXX80.c:462:9: style: Variable 'HumReg' is assigned a value that is never used. [unreadVariable]
+ HumReg = BME280_Read8(BME280_HUM_CONTROL);
+        ^
+Checking Core\Src\BMXX80.c: BME280...
+Checking Core\Src\BMXX80.c: BMP180...
+Checking Core\Src\BMXX80.c: BMP280...
+Core\Src\BMXX80.c:490:11: style: The scope of the variable 'var1' can be reduced. [variableScope]
+  int32_t var1, var2;
+          ^
+Core\Src\BMXX80.c:490:17: style: The scope of the variable 'var2' can be reduced. [variableScope]
+  int32_t var1, var2;
+                ^
+1/32 files checked 9% done
+Checking Core\Src\ButtonHandler.cpp ...
+Core\Inc\ButtonHandler.h:11:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Inc\ButtonHandler.h:12:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Inc\my_app.h:16:0: information: Include file: <cstdarg> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstdarg>
+^
+Core\Inc\my_app.h:17:0: information: Include file: <cstdio> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstdio>
+^
+Core\Inc\my_app.h:18:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+Core\Inc\my_app.h:19:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Inc\my_app.h:20:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Inc\my_app.h:21:0: information: Include file: "queue.h" not found. [missingInclude]
+#include "queue.h"
+^
+Core\Inc\my_app.h:22:0: information: Include file: "semphr.h" not found. [missingInclude]
+#include "semphr.h"
+^
+Core\Src\ButtonHandler.cpp:10:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+2/32 files checked 10% done
+Checking Core\Src\bme_display_task.cpp ...
+Core\Src\bme_display_task.cpp:8:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+Core\Src\bme_display_task.cpp:9:0: information: Include file: <cmath> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cmath>
+^
+Core\Inc\gc9a01a.h:3:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Inc\fonts\my_fonts.h:4:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+Core\Inc\fonts\my_fonts.h:5:0: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdint.h>
+^
+Core\Inc\fonts\my_fonts.h:6:0: information: Include file: <stdbool.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdbool.h>
+^
+Core\Inc\gc9a01a.h:6:0: information: Include file: <cstdint> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstdint>
+^
+Core\Inc\gc9a01a.h:7:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Inc\gc9a01a.h:8:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Inc\gc9a01a_initcmd.h:3:0: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdint.h>
+^
+Core\Src\bme_display_task.cpp:12:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+Core\Src\bme_display_task.cpp:20:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Src\bme_display_task.cpp:21:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Inc\filters.h:2:0: information: Include file: <algorithm> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <algorithm>
+^
+Core\Inc\filters.h:3:0: information: Include file: <array> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <array>
+^
+Core\Inc\filters.h:4:0: information: Include file: <type_traits> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <type_traits>
+^
+Core\Inc\fonts\logo_thaleo.h:11:0: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdint.h>
+^
+Core\Inc\sensor_task.h:11:0: information: Include file: <cstdint> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstdint>
+^
+Core\Src\bme_display_task.cpp:25:0: information: Include file: "queue.h" not found. [missingInclude]
+#include "queue.h"
+^
+Core\Inc\eeprom.h:29:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Inc\watchdog.h:3:0: information: Include file: "cmsis_os.h" not found. [missingInclude]
+#include "cmsis_os.h"
+^
+Core\Inc\watchdog.h:4:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Inc\watchdog.h:5:0: information: Include file: <cstdint> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstdint>
+^
+Core\Inc\watchdog.h:6:0: information: Include file: <array> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <array>
+^
+Core\Inc\watchdog.h:7:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+Core\Inc\watchdog.h:32:5: warning: Member variable 'WatchdogManager::tasks' is not initialized in the constructor. [uninitMemberVarPrivate]
+    WatchdogManager() = default;
+    ^
+Core\Src\bme_display_task.cpp:168:28: style: Condition 'mode==0' is always true [knownConditionTrueFalse]
+             }else if(mode == 0){
+                           ^
+Core\Src\bme_display_task.cpp:163:22: note: Assuming that condition 'mode==1' is not redundant
+             if(mode == 1){
+                     ^
+Core\Src\bme_display_task.cpp:168:28: note: Condition 'mode==0' is always true
+             }else if(mode == 0){
+                           ^
+Core\Src\bme_display_task.cpp:114:9: warning: %ld in format string (no. 1) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        sprintf(press_disp, "P:%ldhPa", currData.pres);
+        ^
+Core\Src\bme_display_task.cpp:73:36: style: C-style pointer casting [cstyleCast]
+        HAL_UART_Transmit(&huart2, (uint8_t*)"Retrying EE_WriteVariable...\n", 30, HAL_MAX_DELAY);
+                                   ^
+Core\Src\bme_display_task.cpp:79:32: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+                               ^
+Core\Src\bme_display_task.cpp:104:32: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), HAL_MAX_DELAY);
+                               ^
+Core\Src\bme_display_task.cpp:152:48: style: C-style pointer casting [cstyleCast]
+                    HAL_UART_Transmit(&huart2, (uint8_t*)"SHORT PRESS\n", 12, HAL_MAX_DELAY);
+                                               ^
+Core\Src\bme_display_task.cpp:161:44: style: C-style pointer casting [cstyleCast]
+                HAL_UART_Transmit(&huart2, (uint8_t*)"LONG PRESS\n", 11, HAL_MAX_DELAY);
+                                           ^
+Core\Src\bme_display_task.cpp:143:11: style: The scope of the variable 'colorChanged' can be reduced. [variableScope]
+     bool colorChanged = false;
+          ^
+Core\Src\bme_display_task.cpp:207:29: style: Parameter 'argument' can be declared as pointer to const [constParameterPointer]
+void BME_Display_Task(void *argument)
+                            ^
+Checking Core\Src\bme_display_task.cpp: BMP180...
+Checking Core\Src\bme_display_task.cpp: BMP280...
+3/32 files checked 13% done
+Checking Core\Src\delays.c ...
+Core\Src\delays.c:11:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Src\delays.c:19:28: style: Unsigned expression 'us' can't be negative so it is unnecessary to test it. [unsignedPositive]
+ while(htim3.Instance->CNT <= us);
+                           ^
+Core\Src\delays.c:18:24: note: Assignment 'htim3.Instance->CNT=0', assigned value is 0
+ htim3.Instance->CNT = 0;
+                       ^
+Core\Src\delays.c:19:28: note: Unsigned positive
+ while(htim3.Instance->CNT <= us);
+                           ^
+4/32 files checked 13% done
+Checking Core\Src\dma.c ...
+5/32 files checked 14% done
+Checking Core\Src\eeprom.c ...
+Core\Src\eeprom.c:23:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Src\eeprom.c:24:0: information: Include file: "stm32f4xx_hal_flash_ex.h" not found. [missingInclude]
+#include "stm32f4xx_hal_flash_ex.h"  // <-- to jest wymagane
+^
+Core\Src\eeprom.c:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+Core\Src\eeprom.c:574:18: style: Redundant initialization for 'PageEndAddress'. The initialized value is overwritten before it is read. [redundantInitialization]
+  PageEndAddress = (uint32_t)((EEPROM_START_ADDRESS - 1) + (uint32_t)((ValidPage + 1) * PAGE_SIZE));
+                 ^
+Core\Src\eeprom.c:559:59: note: PageEndAddress is initialized
+  uint32_t Address = EEPROM_START_ADDRESS, PageEndAddress = EEPROM_START_ADDRESS+PAGE_SIZE;
+                                                          ^
+Core\Src\eeprom.c:574:18: note: PageEndAddress is overwritten
+  PageEndAddress = (uint32_t)((EEPROM_START_ADDRESS - 1) + (uint32_t)((ValidPage + 1) * PAGE_SIZE));
+                 ^
+Core\Src\eeprom.c:310:12: style: The scope of the variable 'AddressValue' can be reduced. [variableScope]
+  uint16_t AddressValue = 0x5555;
+           ^
+Core\Src\eeprom.c:351:12: style: The scope of the variable 'AddressValue' can be reduced. [variableScope]
+  uint16_t AddressValue = 0x5555, ReadStatus = 1;
+           ^
+Core\Src\eeprom.c:310:25: style: Variable 'AddressValue' is assigned a value that is never used. [unreadVariable]
+  uint16_t AddressValue = 0x5555;
+                        ^
+Core\Src\eeprom.c:351:25: style: Variable 'AddressValue' is assigned a value that is never used. [unreadVariable]
+  uint16_t AddressValue = 0x5555, ReadStatus = 1;
+                        ^
+Core\Src\eeprom.c:557:33: style: Variable 'FlashStatus' is assigned a value that is never used. [unreadVariable]
+  HAL_StatusTypeDef FlashStatus = HAL_OK;
+                                ^
+Core\Src\eeprom.c:622:41: style: Variable 'ReadStatus' is assigned a value that is never used. [unreadVariable]
+  uint16_t EepromStatus = 0, ReadStatus = 0;
+                                        ^
+6/32 files checked 24% done
+Checking Core\Src\esp8266.cpp ...
+Core\Inc\esp8266.h:4:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Inc\esp8266.h:5:0: information: Include file: <cstddef> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstddef>
+^
+Core\Src\esp8266.cpp:11:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+Core\Src\esp8266.cpp:12:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+Core\Src\esp8266.cpp:13:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Src\esp8266.cpp:14:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Src\esp8266.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+Core\Inc\esp8266.h:9:5: style: Class 'ESP8266' has a constructor with 1 argument that is not explicit. [noExplicitConstructor]
+    ESP8266(UART_HandleTypeDef* uart, UART_HandleTypeDef* debug_uart = nullptr);
+    ^
+Core\Src\esp8266.cpp:122:5: warning: %ld in format string (no. 4) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+    snprintf(http, sizeof(http),
+    ^
+Core\Src\esp8266.cpp:26:35: style: C-style pointer casting [cstyleCast]
+        HAL_UART_Transmit(_debug, (uint8_t*)str, strlen(str), 100);
+                                  ^
+Core\Src\esp8266.cpp:36:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)cmd, strlen(cmd), 100);
+                             ^
+Core\Src\esp8266.cpp:103:22: style: C-style pointer casting [cstyleCast]
+    if (!sendCommand((char*)"AT+CWJAP?\r\n", response, sizeof(response), 1000)) {
+                     ^
+Core\Src\esp8266.cpp:132:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)cmd, strlen(cmd), 100);
+                             ^
+Core\Src\esp8266.cpp:161:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)http, strlen(http), 200);
+                             ^
+Core\Src\esp8266.cpp:194:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)cmd, strlen(cmd), 100);
+                             ^
+Core\Src\esp8266.cpp:225:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)cmd, strlen(cmd), 100);
+                             ^
+Core\Src\esp8266.cpp:260:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)data, len, 1000);
+                             ^
+Core\Src\esp8266.cpp:293:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)cmd, strlen(cmd), 100);
+                             ^
+Core\Src\esp8266.cpp:303:30: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(_uart, (uint8_t*)cmd, strlen(cmd), 100);
+                             ^
+7/32 files checked 28% done
+Checking Core\Src\esp_wifi.cpp ...
+Core\Src\esp_wifi.cpp:8:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Src\esp_wifi.cpp:9:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Src\esp_wifi.cpp:11:0: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <string.h>
+^
+Core\Src\esp_wifi.cpp:12:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+Core\Inc\led.h:11:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Inc\led.h:12:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Src\esp_wifi.cpp:16:0: information: Include file: "queue.h" not found. [missingInclude]
+#include "queue.h"
+^
+Core\Src\esp_wifi.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+Core\Src\esp_wifi.cpp:68:13: style: C-style pointer casting [cstyleCast]
+ Led* led = (Led*)argument;
+            ^
+Core\Src\esp_wifi.cpp:76:10: style: Variable 'WapiKey' can be declared as const array [constVariable]
+    char WapiKey[] = "7WWRU5F5YMN25XGB";
+         ^
+8/32 files checked 30% done
+Checking Core\Src\freertos.c ...
+Core\Src\freertos.c:21:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Src\freertos.c:22:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Src\freertos.c:24:0: information: Include file: "cmsis_os.h" not found. [missingInclude]
+#include "cmsis_os.h"
+^
+9/32 files checked 32% done
+Checking Core\Src\gc9a01a.cpp ...
+Core\Src\gc9a01a.cpp:5:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+Core\Src\gc9a01a.cpp:0:0: information: Limiting analysis of branches. Use --check-level=exhaustive to analyze all branches. [normalCheckLevelMaxBranches]
+
+^
+Core\Inc\gc9a01a.h:132:10: style: Unused private function: 'GC9A01A::transmitColor' [unusedPrivateFunction]
+    void transmitColor(uint16_t color);
+         ^
+Core\Inc\gc9a01a.h:107:12: performance: inconclusive: Technically the member function 'GC9A01A::getWidth' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    size_t getWidth() const;
+           ^
+Core\Src\gc9a01a.cpp:266:17: note: Technically the member function 'GC9A01A::getWidth' can be static (but you may consider moving to unnamed namespace).
+size_t GC9A01A::getWidth() const { return width_; }
+                ^
+Core\Inc\gc9a01a.h:107:12: note: Technically the member function 'GC9A01A::getWidth' can be static (but you may consider moving to unnamed namespace).
+    size_t getWidth() const;
+           ^
+Core\Inc\gc9a01a.h:108:12: performance: inconclusive: Technically the member function 'GC9A01A::getHeight' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    size_t getHeight() const;
+           ^
+Core\Src\gc9a01a.cpp:267:17: note: Technically the member function 'GC9A01A::getHeight' can be static (but you may consider moving to unnamed namespace).
+size_t GC9A01A::getHeight() const { return height_; }
+                ^
+Core\Inc\gc9a01a.h:108:12: note: Technically the member function 'GC9A01A::getHeight' can be static (but you may consider moving to unnamed namespace).
+    size_t getHeight() const;
+           ^
+Core\Inc\gc9a01a.h:113:10: performance: inconclusive: Technically the member function 'GC9A01A::drawCharToBuffer' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    void drawCharToBuffer(uint16_t* buffer, uint16_t width, uint16_t height,
+         ^
+Core\Src\gc9a01a.cpp:164:15: note: Technically the member function 'GC9A01A::drawCharToBuffer' can be static (but you may consider moving to unnamed namespace).
+void GC9A01A::drawCharToBuffer(uint16_t* buffer, uint16_t width, uint16_t height,
+              ^
+Core\Inc\gc9a01a.h:113:10: note: Technically the member function 'GC9A01A::drawCharToBuffer' can be static (but you may consider moving to unnamed namespace).
+    void drawCharToBuffer(uint16_t* buffer, uint16_t width, uint16_t height,
+         ^
+Core\Inc\gc9a01a.h:127:10: performance: inconclusive: Technically the member function 'GC9A01A::setSpiDataSize' can be static (but you may consider moving to unnamed namespace). [functionStatic]
+    void setSpiDataSize(uint32_t data_size);
+         ^
+Core\Src\gc9a01a.cpp:230:15: note: Technically the member function 'GC9A01A::setSpiDataSize' can be static (but you may consider moving to unnamed namespace).
+void GC9A01A::setSpiDataSize(uint32_t) {
+              ^
+Core\Inc\gc9a01a.h:127:10: note: Technically the member function 'GC9A01A::setSpiDataSize' can be static (but you may consider moving to unnamed namespace).
+    void setSpiDataSize(uint32_t data_size);
+         ^
+Core\Src\gc9a01a.cpp:36:29: style: C-style pointer casting [cstyleCast]
+        configureParam(cmd, (uint8_t *)addr, numArgs);
+                            ^
+Core\Src\gc9a01a.cpp:136:17: style: C-style pointer casting [cstyleCast]
+            ? ((const uint16_t *)font->bitmap)[index + col]
+                ^
+Core\Src\gc9a01a.cpp:137:17: style: C-style pointer casting [cstyleCast]
+            : ((const uint8_t *)font->bitmap)[index + col];
+                ^
+Core\Src\gc9a01a.cpp:172:17: style: C-style pointer casting [cstyleCast]
+            ? ((const uint16_t*)font->bitmap)[index + col]
+                ^
+Core\Src\gc9a01a.cpp:173:17: style: C-style pointer casting [cstyleCast]
+            : ((const uint8_t*)font->bitmap)[index + col];
+                ^
+Core\Src\gc9a01a.cpp:323:37: style: C-style pointer casting [cstyleCast]
+        HAL_SPI_Transmit_DMA(hspi_, (uint8_t*)lineBuf, toCopy * sizeof(uint16_t));
+                                    ^
+Core\Src\gc9a01a.cpp:391:37: style: C-style pointer casting [cstyleCast]
+        HAL_SPI_Transmit_DMA(hspi_, (uint8_t*)lineBuf, count * 2);
+                                    ^
+Core\Src\gc9a01a.cpp:248:48: style: Parameter 'data' can be declared as pointer to const [constParameterPointer]
+void GC9A01A::transmitData(size_t n, uint16_t *data) {
+                                               ^
+10/32 files checked 38% done
+Checking Core\Src\gpio.c ...
+11/32 files checked 39% done
+Checking Core\Src\i2c.c ...
+Core\Src\i2c.c:59:41: style: Parameter 'i2cHandle' can be declared as pointer to const [constParameterPointer]
+void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
+                                        ^
+Core\Src\i2c.c:89:43: style: Parameter 'i2cHandle' can be declared as pointer to const [constParameterPointer]
+void HAL_I2C_MspDeInit(I2C_HandleTypeDef* i2cHandle)
+                                          ^
+12/32 files checked 40% done
+Checking Core\Src\iwdg.c ...
+13/32 files checked 41% done
+Checking Core\Src\led.cpp ...
+14/32 files checked 42% done
+Checking Core\Src\main.c ...
+Core\Src\main.c:21:0: information: Include file: "cmsis_os.h" not found. [missingInclude]
+#include "cmsis_os.h"
+^
+Core\Src\main.c:34:0: information: Include file: "string.h" not found. [missingInclude]
+#include "string.h"
+^
+Core\Src\main.c:35:0: information: Include file: "stdbool.h" not found. [missingInclude]
+#include "stdbool.h"
+^
+Core\Src\main.c:195:55: style: Parameter 'htim' can be declared as pointer to const [constParameterPointer]
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+                                                      ^
+Checking Core\Src\main.c: USE_FULL_ASSERT...
+Core\Src\main.c:234:29: style: Parameter 'file' can be declared as pointer to const [constParameterPointer]
+void assert_failed(uint8_t *file, uint32_t line)
+                            ^
+15/32 files checked 44% done
+Checking Core\Src\main_cpp.cpp ...
+Core\Src\main_cpp.cpp:10:0: information: Include file: "cmsis_os.h" not found. [missingInclude]
+#include "cmsis_os.h"
+^
+Core\Src\main_cpp.cpp:11:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Src\main_cpp.cpp:12:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Src\main_cpp.cpp:19:0: information: Include file: <string.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <string.h>
+^
+Core\Src\main_cpp.cpp:20:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+Core\Src\main_cpp.cpp:99:32: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(&huart2, (uint8_t*)"Start main_cpp\n", 15, HAL_MAX_DELAY);
+                               ^
+Core\Src\main_cpp.cpp:100:32: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(&huart2, (uint8_t*)"Before BME280_Init\n", 20, HAL_MAX_DELAY);
+                               ^
+Core\Src\main_cpp.cpp:102:32: style: C-style pointer casting [cstyleCast]
+    HAL_UART_Transmit(&huart2, (uint8_t*)"After BME280_Init\n", 19, HAL_MAX_DELAY);
+                               ^
+Core\Src\main_cpp.cpp:61:59: style: Parameter 'hspi' can be declared as pointer to const [constParameterPointer]
+extern "C" void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
+                                                          ^
+Core\Src\main_cpp.cpp:112:18: style: Parameter 'arg' can be declared as pointer to const [constParameterPointer]
+        [](void *arg) {
+                 ^
+Checking Core\Src\main_cpp.cpp: BMP180...
+Checking Core\Src\main_cpp.cpp: BMP280...
+16/32 files checked 46% done
+Checking Core\Src\my_app.cpp ...
+17/32 files checked 47% done
+Checking Core\Src\my_fonts\fontData6x8.c ...
+18/32 files checked 48% done
+Checking Core\Src\my_fonts\fontData9x16.c ...
+19/32 files checked 51% done
+Checking Core\Src\my_fonts\logo_thaleo.cpp ...
+20/32 files checked 71% done
+Checking Core\Src\my_fonts\my_fonts.c ...
+21/32 files checked 71% done
+Checking Core\Src\sensor_task.cpp ...
+Core\Src\sensor_task.cpp:10:0: information: Include file: <cstring> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstring>
+^
+Core\Src\sensor_task.cpp:11:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+Core\Src\sensor_task.cpp:14:0: information: Include file: "FreeRTOS.h" not found. [missingInclude]
+#include "FreeRTOS.h"
+^
+Core\Src\sensor_task.cpp:15:0: information: Include file: "task.h" not found. [missingInclude]
+#include "task.h"
+^
+Core\Src\sensor_task.cpp:19:0: information: Include file: "queue.h" not found. [missingInclude]
+#include "queue.h"
+^
+Core\Src\sensor_task.cpp:46:9: warning: %ld in format string (no. 2) requires 'long' but the argument type is 'signed int'. [invalidPrintfArgType_sint]
+        sprintf(data, "temp: %.2f, pressure: %ld, humidity: %.2f\r\n", wData.temperature, wData.pres, wData.humidity);
+        ^
+Checking Core\Src\sensor_task.cpp: BMP180...
+Checking Core\Src\sensor_task.cpp: BMP280...
+22/32 files checked 72% done
+Checking Core\Src\spi.c ...
+23/32 files checked 74% done
+Checking Core\Src\stm32f4xx_hal_msp.c ...
+24/32 files checked 75% done
+Checking Core\Src\stm32f4xx_hal_timebase_tim.c ...
+Core\Src\stm32f4xx_hal_timebase_tim.c:21:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Src\stm32f4xx_hal_timebase_tim.c:22:0: information: Include file: "stm32f4xx_hal_tim.h" not found. [missingInclude]
+#include "stm32f4xx_hal_tim.h"
+^
+25/32 files checked 77% done
+Checking Core\Src\stm32f4xx_it.c ...
+26/32 files checked 80% done
+Checking Core\Src\syscalls.c ...
+Core\Src\syscalls.c:24:0: information: Include file: <sys/stat.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <sys/stat.h>
+^
+Core\Src\syscalls.c:25:0: information: Include file: <stdlib.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdlib.h>
+^
+Core\Src\syscalls.c:26:0: information: Include file: <errno.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <errno.h>
+^
+Core\Src\syscalls.c:27:0: information: Include file: <stdio.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdio.h>
+^
+Core\Src\syscalls.c:28:0: information: Include file: <signal.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <signal.h>
+^
+Core\Src\syscalls.c:29:0: information: Include file: <time.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <time.h>
+^
+Core\Src\syscalls.c:30:0: information: Include file: <sys/time.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <sys/time.h>
+^
+Core\Src\syscalls.c:31:0: information: Include file: <sys/times.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <sys/times.h>
+^
+Core\Src\syscalls.c:80:50: style: Parameter 'ptr' can be declared as pointer to const [constParameterPointer]
+__attribute__((weak)) int _write(int file, char *ptr, int len)
+                                                 ^
+27/32 files checked 81% done
+Checking Core\Src\sysmem.c ...
+Core\Src\sysmem.c:24:0: information: Include file: <errno.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <errno.h>
+^
+Core\Src\sysmem.c:25:0: information: Include file: <stdint.h> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <stdint.h>
+^
+28/32 files checked 82% done
+Checking Core\Src\system_stm32f4xx.c ...
+Core\Src\system_stm32f4xx.c:48:0: information: Include file: "stm32f4xx.h" not found. [missingInclude]
+#include "stm32f4xx.h"
+^
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F446xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F446xx;STM32F469xx;STM32F479xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F446xx;STM32F469xx;STM32F479xx;STM32F446xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;DATA_IN_ExtSRAM;STM32F405xx;STM32F407xx;STM32F412Vx;STM32F412Zx;STM32F415xx;STM32F417xx;STM32F405xx;STM32F407xx;STM32F412Vx;STM32F412Zx;STM32F415xx;STM32F417xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;DATA_IN_ExtSRAM;STM32F405xx;STM32F407xx;STM32F412Vx;STM32F412Zx;STM32F415xx;STM32F417xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;DATA_IN_ExtSRAM;STM32F405xx;STM32F407xx;STM32F412Vx;STM32F412Zx;STM32F415xx;STM32F417xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;DATA_IN_ExtSRAM;STM32F405xx;STM32F407xx;STM32F412Vx;STM32F412Zx;STM32F415xx;STM32F417xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F405xx;STM32F407xx;STM32F412Vx;STM32F412Zx;STM32F415xx;STM32F417xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F446xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: DATA_IN_ExtSDRAM;DATA_IN_ExtSRAM;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: HSE_VALUE...
+Checking Core\Src\system_stm32f4xx.c: HSI_VALUE...
+Checking Core\Src\system_stm32f4xx.c: STM32F405xx;STM32F407xx;STM32F412Vx;STM32F412Zx;STM32F415xx;STM32F417xx;STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: STM32F427xx;STM32F429xx;STM32F437xx;STM32F439xx;STM32F446xx;STM32F469xx;STM32F479xx...
+Checking Core\Src\system_stm32f4xx.c: USER_VECT_TAB_ADDRESS...
+Checking Core\Src\system_stm32f4xx.c: USER_VECT_TAB_ADDRESS;VECT_TAB_SRAM...
+29/32 files checked 94% done
+Checking Core\Src\tim.c ...
+Core\Src\tim.c:111:46: style: Parameter 'tim_baseHandle' can be declared as pointer to const [constParameterPointer]
+void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
+                                             ^
+Core\Src\tim.c:142:48: style: Parameter 'tim_baseHandle' can be declared as pointer to const [constParameterPointer]
+void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
+                                               ^
+30/32 files checked 96% done
+Checking Core\Src\usart.c ...
+Core\Src\usart.c:89:43: style: Parameter 'uartHandle' can be declared as pointer to const [constParameterPointer]
+void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
+                                          ^
+Core\Src\usart.c:151:45: style: Parameter 'uartHandle' can be declared as pointer to const [constParameterPointer]
+void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
+                                            ^
+31/32 files checked 98% done
+Checking Core\Src\watchdog.cpp ...
+Core\Src\watchdog.cpp:2:0: information: Include file: "stm32f4xx_hal.h" not found. [missingInclude]
+#include "stm32f4xx_hal.h"
+^
+Core\Src\watchdog.cpp:3:0: information: Include file: <cstdio> not found. Please note: Cppcheck does not need standard library headers to get proper results. [missingIncludeSystem]
+#include <cstdio>
+^
+32/32 files checked 100% done
+Core\Inc\filters.h:32:0: style: The function 'reset' is never used. [unusedFunction]
+    void reset() {
+^
+Core\Src\BMXX80.c:299:0: style: The function 'BMP180_Init' is never used. [unusedFunction]
+void BMP180_Init(I2C_HandleTypeDef *i2c_handler, uint8_t mode)
+^
+Core\Src\BMXX80.c:326:0: style: The function 'BMP280_SetConfig' is never used. [unusedFunction]
+void BMP280_SetConfig(uint8_t standby_time, uint8_t filter)
+^
+Core\Src\BMXX80.c:331:0: style: The function 'BMP280_Init' is never used. [unusedFunction]
+void BMP280_Init(I2C_HandleTypeDef *i2c_handler, uint8_t temperature_resolution, uint8_t pressure_oversampling, uint8_t mode)
+^
+Core\Src\BMXX80.c:473:0: style: The function 'BMP180_ReadTemperature' is never used. [unusedFunction]
+float BMP180_ReadTemperature(void)
+^
+Core\Src\BMXX80.c:583:0: style: The function 'BMP180_ReadPressure' is never used. [unusedFunction]
+int32_t BMP180_ReadPressure(void)
+^
+Core\Src\BMXX80.c:686:0: style: The function 'BME280_ReadHuminidity' is never used. [unusedFunction]
+float BME280_ReadHuminidity(void)
+^
+Core\Src\BMXX80.c:715:0: style: The function 'BMP180_PressureToAltitude' is never used. [unusedFunction]
+float BMP180_PressureToAltitude(float sea_level, float atmospheric)
+^
+Core\Src\BMXX80.c:722:0: style: The function 'BMP180_SeaLevelForAltitude' is never used. [unusedFunction]
+float BMP180_SeaLevelForAltitude(float altitude, float atmospheric)
+^
+Core\Src\BMXX80.c:729:0: style: The function 'BMP280_ReadTemperatureAndPressure' is never used. [unusedFunction]
+uint8_t BMP280_ReadTemperatureAndPressure(float *temperature, int32_t *pressure)
+^
+Core\Src\BMXX80.c:764:0: style: The function 'BMP280_ReadAltitude' is never used. [unusedFunction]
+float BMP280_ReadAltitude(float sea_level_pa)
+^
+Core\Src\BMXX80.c:835:0: style: The function 'BME280_ReadAltitude' is never used. [unusedFunction]
+float BME280_ReadAltitude(float sea_level_pa)
+^
+Core\Src\delays.c:22:0: style: The function 'Delay_us_new' is never used. [unusedFunction]
+void Delay_us_new(uint32_t us)
+^
+Core\Src\esp8266.cpp:20:0: style: The function 'setDebug' is never used. [unusedFunction]
+void ESP8266::setDebug(bool enable) {
+^
+Core\Src\esp8266.cpp:30:0: style: The function 'isBusy' is never used. [unusedFunction]
+bool ESP8266::isBusy() const { return busy; }
+^
+Core\Src\esp8266.cpp:31:0: style: The function 'setBusy' is never used. [unusedFunction]
+void ESP8266::setBusy(bool b) { busy = b; }
+^
+Core\Src\freertos.c:68:0: style: The function 'vApplicationGetIdleTaskMemory' is never used. [unusedFunction]
+void vApplicationGetIdleTaskMemory( StaticTask_t **ppxIdleTaskTCBBuffer, StackType_t **ppxIdleTaskStackBuffer, uint32_t *pulIdleTaskStackSize )
+^
+Core\Src\gc9a01a.cpp:90:0: style: The function 'drawScreen' is never used. [unusedFunction]
+void GC9A01A::drawScreen(uint16_t *img) {
+^
+Core\Src\gc9a01a.cpp:150:0: style: The function 'drawTextGen' is never used. [unusedFunction]
+void GC9A01A::drawTextGen(uint16_t x, uint16_t y, const char* str, uint16_t color, uint16_t background, const fontStruct* font, uint8_t scale, uint8_t pos) {
+^
+Core\Src\gc9a01a.cpp:220:0: style: The function 'color565' is never used. [unusedFunction]
+uint16_t GC9A01A::color565(uint8_t red, uint8_t green, uint8_t blue) {
+^
+Core\Src\gc9a01a.cpp:224:0: style: The function 'swapBytes' is never used. [unusedFunction]
+void GC9A01A::swapBytes(size_t len, uint16_t *dest, uint16_t *src) {
+^
+Core\Src\gc9a01a.cpp:258:0: style: The function 'transmitColor' is never used. [unusedFunction]
+void GC9A01A::transmitColor(uint16_t color) {
+^
+Core\Src\i2c.c:59:0: style: The function 'HAL_I2C_MspInit' is never used. [unusedFunction]
+void HAL_I2C_MspInit(I2C_HandleTypeDef* i2cHandle)
+^
+Core\Src\i2c.c:89:0: style: The function 'HAL_I2C_MspDeInit' is never used. [unusedFunction]
+void HAL_I2C_MspDeInit(I2C_HandleTypeDef* i2cHandle)
+^
+Core\Src\led.cpp:61:0: style: The function 'get_freq' is never used. [unusedFunction]
+uint16_t Led::get_freq(){
+^
+Core\Src\led.cpp:75:0: style: The function 'stop' is never used. [unusedFunction]
+void Led::stop(){
+^
+Core\Src\main.c:195:0: style: The function 'HAL_TIM_PeriodElapsedCallback' is never used. [unusedFunction]
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+^
+Core\Src\main.c:234:0: style: The function 'assert_failed' is never used. [unusedFunction]
+void assert_failed(uint8_t *file, uint32_t line)
+^
+Core\Src\main_cpp.cpp:51:0: style: The function 'HAL_GPIO_EXTI_Callback' is never used. [unusedFunction]
+void HAL_GPIO_EXTI_Callback(uint16_t GPIO_Pin)
+^
+Core\Src\spi.c:63:0: style: The function 'HAL_SPI_MspInit' is never used. [unusedFunction]
+void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
+^
+Core\Src\spi.c:112:0: style: The function 'HAL_SPI_MspDeInit' is never used. [unusedFunction]
+void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
+^
+Core\Src\stm32f4xx_hal_msp.c:63:0: style: The function 'HAL_MspInit' is never used. [unusedFunction]
+void HAL_MspInit(void)
+^
+Core\Src\stm32f4xx_hal_timebase_tim.c:41:0: style: The function 'HAL_InitTick' is never used. [unusedFunction]
+HAL_StatusTypeDef HAL_InitTick(uint32_t TickPriority)
+^
+Core\Src\stm32f4xx_hal_timebase_tim.c:120:0: style: The function 'HAL_SuspendTick' is never used. [unusedFunction]
+void HAL_SuspendTick(void)
+^
+Core\Src\stm32f4xx_hal_timebase_tim.c:132:0: style: The function 'HAL_ResumeTick' is never used. [unusedFunction]
+void HAL_ResumeTick(void)
+^
+Core\Src\stm32f4xx_it.c:72:0: style: The function 'NMI_Handler' is never used. [unusedFunction]
+void NMI_Handler(void)
+^
+Core\Src\stm32f4xx_it.c:87:0: style: The function 'HardFault_Handler' is never used. [unusedFunction]
+void HardFault_Handler(void)
+^
+Core\Src\stm32f4xx_it.c:102:0: style: The function 'MemManage_Handler' is never used. [unusedFunction]
+void MemManage_Handler(void)
+^
+Core\Src\stm32f4xx_it.c:117:0: style: The function 'BusFault_Handler' is never used. [unusedFunction]
+void BusFault_Handler(void)
+^
+Core\Src\stm32f4xx_it.c:132:0: style: The function 'UsageFault_Handler' is never used. [unusedFunction]
+void UsageFault_Handler(void)
+^
+Core\Src\stm32f4xx_it.c:147:0: style: The function 'DebugMon_Handler' is never used. [unusedFunction]
+void DebugMon_Handler(void)
+^
+Core\Src\stm32f4xx_it.c:167:0: style: The function 'TIM2_IRQHandler' is never used. [unusedFunction]
+void TIM2_IRQHandler(void)
+^
+Core\Src\stm32f4xx_it.c:181:0: style: The function 'EXTI15_10_IRQHandler' is never used. [unusedFunction]
+void EXTI15_10_IRQHandler(void)
+^
+Core\Src\stm32f4xx_it.c:196:0: style: The function 'TIM6_DAC_IRQHandler' is never used. [unusedFunction]
+void TIM6_DAC_IRQHandler(void)
+^
+Core\Src\stm32f4xx_it.c:210:0: style: The function 'DMA2_Stream3_IRQHandler' is never used. [unusedFunction]
+void DMA2_Stream3_IRQHandler(void)
+^
+Core\Src\syscalls.c:44:0: style: The function 'initialise_monitor_handles' is never used. [unusedFunction]
+void initialise_monitor_handles()
+^
+Core\Src\syscalls.c:48:0: style: The function '_getpid' is never used. [unusedFunction]
+int _getpid(void)
+^
+Core\Src\syscalls.c:61:0: style: The function '_exit' is never used. [unusedFunction]
+void _exit (int status)
+^
+Core\Src\syscalls.c:67:0: style: The function '_read' is never used. [unusedFunction]
+__attribute__((weak)) int _read(int file, char *ptr, int len)
+^
+Core\Src\syscalls.c:80:0: style: The function '_write' is never used. [unusedFunction]
+__attribute__((weak)) int _write(int file, char *ptr, int len)
+^
+Core\Src\syscalls.c:92:0: style: The function '_close' is never used. [unusedFunction]
+int _close(int file)
+^
+Core\Src\syscalls.c:99:0: style: The function '_fstat' is never used. [unusedFunction]
+int _fstat(int file, struct stat *st)
+^
+Core\Src\syscalls.c:106:0: style: The function '_isatty' is never used. [unusedFunction]
+int _isatty(int file)
+^
+Core\Src\syscalls.c:112:0: style: The function '_lseek' is never used. [unusedFunction]
+int _lseek(int file, int ptr, int dir)
+^
+Core\Src\syscalls.c:120:0: style: The function '_open' is never used. [unusedFunction]
+int _open(char *path, int flags, ...)
+^
+Core\Src\syscalls.c:128:0: style: The function '_wait' is never used. [unusedFunction]
+int _wait(int *status)
+^
+Core\Src\syscalls.c:135:0: style: The function '_unlink' is never used. [unusedFunction]
+int _unlink(char *name)
+^
+Core\Src\syscalls.c:142:0: style: The function '_times' is never used. [unusedFunction]
+int _times(struct tms *buf)
+^
+Core\Src\syscalls.c:148:0: style: The function '_stat' is never used. [unusedFunction]
+int _stat(char *file, struct stat *st)
+^
+Core\Src\syscalls.c:155:0: style: The function '_link' is never used. [unusedFunction]
+int _link(char *old, char *new)
+^
+Core\Src\syscalls.c:163:0: style: The function '_fork' is never used. [unusedFunction]
+int _fork(void)
+^
+Core\Src\syscalls.c:169:0: style: The function '_execve' is never used. [unusedFunction]
+int _execve(char *name, char **argv, char **env)
+^
+Core\Src\sysmem.c:53:0: style: The function '_sbrk' is never used. [unusedFunction]
+void *_sbrk(ptrdiff_t incr)
+^
+Core\Src\system_stm32f4xx.c:167:0: style: The function 'SystemInit' is never used. [unusedFunction]
+void SystemInit(void)
+^
+Core\Src\system_stm32f4xx.c:220:0: style: The function 'SystemCoreClockUpdate' is never used. [unusedFunction]
+void SystemCoreClockUpdate(void)
+^
+Core\Src\tim.c:111:0: style: The function 'HAL_TIM_Base_MspInit' is never used. [unusedFunction]
+void HAL_TIM_Base_MspInit(TIM_HandleTypeDef* tim_baseHandle)
+^
+Core\Src\tim.c:142:0: style: The function 'HAL_TIM_Base_MspDeInit' is never used. [unusedFunction]
+void HAL_TIM_Base_MspDeInit(TIM_HandleTypeDef* tim_baseHandle)
+^
+Core\Src\usart.c:89:0: style: The function 'HAL_UART_MspInit' is never used. [unusedFunction]
+void HAL_UART_MspInit(UART_HandleTypeDef* uartHandle)
+^
+Core\Src\usart.c:151:0: style: The function 'HAL_UART_MspDeInit' is never used. [unusedFunction]
+void HAL_UART_MspDeInit(UART_HandleTypeDef* uartHandle)
+^
+Core\Src\watchdog.cpp:75:0: style: The function 'StartWatchdogTask' is never used. [unusedFunction]
+void StartWatchdogTask(void *argument) {
+^
+nofile:0:0: information: Active checkers: 179/836 (use --checkers-report=<filename> to see details) [checkersReport]
+

@@ -21,4 +21,4 @@ jobs:
 
       - name: Build project
         run: |
-          make -f Makefile.ci
+          make -f Makefile
