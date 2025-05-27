@@ -1,0 +1,24 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Debug STM32 (OpenOCD)",
+      "type": "cortex-debug",
+      "request": "launch",
+      "servertype": "openocd",
+      "cwd": "${workspaceFolder}",
+      "executable": "tft_SPI2_v9_wd.elf",
+      "device": "STM32F446RE",
+      "configFiles": [
+        "interface/stlink.cfg",
+        "target/stm32f4x.cfg"
+      ],
+      "searchDir": [
+        "${env:OPENOCD_SCRIPTS}"
+      ],
+      "runToMain": true,
+      "preLaunchTask": "Build STM32 (make)",
+      "svdFile": "${workspaceFolder}/STM32F446xx.svd"
+    }
+  ]
+}

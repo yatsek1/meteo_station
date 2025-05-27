@@ -1,0 +1,49 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Build STM32 (make)",
+      "type": "shell",
+      "command": "make",
+      "args": ["-f", "Makefile.vscode"],
+      "options": {
+        "shell": {
+          "executable": "C:\\Program Files\\Git\\bin\\bash.exe",
+          "args": ["-c"]
+        }
+      },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": ["$gcc"],
+      "detail": "Buduje projekt STM32 przez oryginalny Makefile (zgodny z CubeIDE)"
+    },
+    {
+      "label": "Clean STM32 (make clean)",
+      "type": "shell",
+      "command": "make",
+      "args": ["-f", "Makefile.vscode", "clean"],
+      "options": {
+        "shell": {
+          "executable": "C:\\Program Files\\Git\\bin\\bash.exe",
+          "args": ["-c"]
+        }
+      },
+      "group": "none"
+    },
+    {
+      "label": "Flash STM32 (make flash)",
+      "type": "shell",
+      "command": "make",
+      "args": ["-f", "Makefile.vscode", "flash"],
+      "options": {
+        "shell": {
+          "executable": "C:\\Program Files\\Git\\bin\\bash.exe",
+          "args": ["-c"]
+        }
+      },
+      "group": "none"
+    }
+  ]
+}

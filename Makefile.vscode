@@ -1,0 +1,86 @@
+# === Konfiguracja ===
+TARGET = tft_SPI2_v9_wd
+BUILD_DIR = build
+
+CC = arm-none-eabi-gcc
+CXX = arm-none-eabi-g++
+AS = arm-none-eabi-as
+OBJCOPY = arm-none-eabi-objcopy
+SIZE = arm-none-eabi-size
+
+# Wspólne flagi dla C i C++
+COMMON_FLAGS = -mcpu=cortex-m4 -mthumb -Wall -g -O2 \
+         -ffunction-sections -fdata-sections -DUSE_HAL_DRIVER -DSTM32F446xx \
+         -MMD -MP -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+
+CFLAGS   = $(COMMON_FLAGS) -std=gnu11
+CXXFLAGS = $(COMMON_FLAGS) -std=gnu++17 -fno-exceptions
+ASFLAGS  = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard
+
+LDFLAGS = -TSTM32F446RETX_FLASH.ld -Wl,--gc-sections \
+          -Wl,-Map=$(BUILD_DIR)/$(TARGET).map \
+          --specs=nosys.specs -lc -lm -lstdc++ -lsupc++
+
+
+INCLUDE_DIRS = \
+  -ICore/Inc \
+  -IDrivers/STM32F4xx_HAL_Driver/Inc \
+  -IDrivers/STM32F4xx_HAL_Driver/Inc/Legacy \
+  -IDrivers/CMSIS/Device/ST/STM32F4xx/Include \
+  -IDrivers/CMSIS/Include \
+  -IMiddlewares/Third_Party/FreeRTOS/Source/include \
+  -IMiddlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS \
+  -IMiddlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F \
+  -IFreeRTOS/Source/include \
+  -IFonts \
+  -IInc
+
+# === Źródła ===
+C_SOURCES := $(shell find Core Drivers Middlewares -name "*.c")
+CPP_SOURCES := $(shell find Core Drivers Middlewares -name "*.cpp")
+ASM_SOURCES := Core/Startup/startup_stm32f446retx.s
+
+OBJECTS = $(addprefix $(BUILD_DIR)/, \
+  $(C_SOURCES:.c=.o) \
+  $(CPP_SOURCES:.cpp=.o) \
+  $(ASM_SOURCES:.s=.o) \
+)
+
+DEPS = $(OBJECTS:.o=.d)
+
+# === Domyślny cel ===
+all: $(BUILD_DIR)/$(TARGET).elf
+
+# === Kompilacja ===
+$(BUILD_DIR)/%.o: %.c
+	@mkdir -p $(dir $@)
+	$(CC) $(CFLAGS) $(INCLUDE_DIRS) -c $< -o $@
+
+$(BUILD_DIR)/%.o: %.cpp
+	@mkdir -p $(dir $@)
+	$(CXX) $(CXXFLAGS) $(INCLUDE_DIRS) -c $< -o $@
+
+$(BUILD_DIR)/%.o: %.s
+	@mkdir -p $(dir $@)
+	$(CC) $(ASFLAGS) -c $< -o $@
+
+# === Linkowanie ===
+$(BUILD_DIR)/$(TARGET).elf: $(OBJECTS)
+	$(CXX) $(CXXFLAGS) $(OBJECTS) -o $@ $(LDFLAGS)
+	$(OBJCOPY) -O ihex $@ $(BUILD_DIR)/$(TARGET).hex
+	$(OBJCOPY) -O binary $@ $(BUILD_DIR)/$(TARGET).bin
+	$(SIZE) $@
+
+# === Flashowanie ===
+flash: $(BUILD_DIR)/$(TARGET).elf
+	openocd -s "$$OPENOCD_SCRIPTS" \
+	        -f interface/stlink.cfg \
+	        -f target/stm32f4x.cfg \
+	        -c "program $< verify reset exit"
+
+# === Clean ===
+clean:
+	rm -rf $(BUILD_DIR)
+
+# === Pliki zależności ===
+-include $(DEPS)
