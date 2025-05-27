@@ -1,5 +1,6 @@
 # Ignoruj wszystko w Debug/
 Debug/*
+build/
 
 # Ale zachowaj tylko te pliki potrzebne do budowania projektu w GitHub Actions:
 !Debug/Makefile

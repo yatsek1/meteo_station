@@ -47,8 +47,8 @@ void sendDiagnosticsOverTCP(ESP8266& esp) {
     len += snprintf(json + len, sizeof(json) - len,
         "},"
         "\"heap\":{"
-            "\"current\":%lu,"
-            "\"min\":%lu"
+            "\"current\":%zu,"
+            "\"min\":%zu"
         "}"
         "}",
         xPortGetFreeHeapSize(),
