@@ -185,6 +185,7 @@ void show_weather_data(){
 		if(xTaskGetTickCount() - lastWriteTick > pdMS_TO_TICKS(1 * 60 * 1000)){
 			if(colorIdx != lastSavedColorIdx){
 				uartPrint("Tick: %lu, ColorIdx: %u, LastSaved: %u\n", xTaskGetTickCount(), colorIdx, lastSavedColorIdx);
+                logMessage("Color %u saved to EEPROM", colors[colorIdx]);
 				SaveColorIdx(colorIdx);
 				lastSavedColorIdx = colorIdx;
 				lastWriteTick = xTaskGetTickCount();

@@ -88,6 +88,7 @@ void ESP_wifi_task(void *argument)
 
             if (connected) {
                 uartPrint("CONNECTED TO WIFI!\r\n");
+                logMessage("Connected to INEA-3981");
             } else {
                 uartPrint("CONNECTION TO WIFI FAILED!\r\n");
             }

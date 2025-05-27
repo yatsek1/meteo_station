@@ -39,7 +39,7 @@ void logMessage(const char* fmt, ...) {
 
     ESPMessage msg = { .type = ESP_MSG_LOG };
     snprintf(msg.payload, sizeof(msg.payload),
-             "{\"device\":\"esp01\",\"message\":\"%s\"}", msgbuf);
+             "{\"device\":\"esp01\",\"type\":\"log\",\"message\":\"%s\"}", msgbuf);
 
     xQueueSend(logQueue, &msg, 0);
 }
